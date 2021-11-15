@@ -1,0 +1,6 @@
+Welcome to the greatest reference sheet the world has never known.
+
+I will be your guide for this journey as we venture into the world of programming.
+
+Let's start with some Python.   
+pythonReference.py

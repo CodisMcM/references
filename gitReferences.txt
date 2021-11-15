@@ -1,0 +1,27 @@
+Welcome to git References!!
+
+Here is where we start, I'm assuming you already have git installed. If not, well that's too bad.
+    We will start with config and setup stuff. Go to the dotted line in order to skip this stuff.
+
+
+
+Follow the prompts to log in to your repository and you will have access to all of your git files.
+
+git clone <your link here>
+
+This /\/\ will bring your repository to your machine. From here you can submit pull requests and push requests to store your code on the online git repository.
+
+Now run 
+    git config -e
+You will see information about the repository that you are in including the format version, the url and the current branch that you are in. (Press ctr+z to leave this screen).
+
+We should first checkout the trunk/main. The last screen should have told you which file you were on.
+
+Before we do anything, let's do a simple git push.
+We have to configure the global setting for push first.
+git config --global push.default <nothing, current, upstream, simple, matching>
+
+nothing     -- Will only push items if a refspec is explicitly given. This is primarily for people who are paranoid or need very specific pushes as to not break their system. 
+                                                                                                                            Perhaps for those who do a lot of beta testing
+current     -- Will only push the current branch to update a branch with the same name on the receiving end. I like this one if you are deliberate.
+upstream    -- Will push the current branch back to branch you pulled from. This is more for central workflow so do it if you work like that. (All people working on the same branch at the same time).
