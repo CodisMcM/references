@@ -22,6 +22,16 @@ We have to configure the global setting for push first.
 git config --global push.default <nothing, current, upstream, simple, matching>
 
 nothing     -- Will only push items if a refspec is explicitly given. This is primarily for people who are paranoid or need very specific pushes as to not break their system. 
-                                                                                                                            Perhaps for those who do a lot of beta testing
+                                                            Perhaps for those who do a lot of beta testing
 current     -- Will only push the current branch to update a branch with the same name on the receiving end. I like this one if you are deliberate.
-upstream    -- Will push the current branch back to branch you pulled from. This is more for central workflow so do it if you work like that. (All people working on the same branch at the same time).
+upstream    -- Will push the current branch back to branch you pulled from. This is more for central workflow so do it if you work like that. (All people working on the same branch at the same time). 
+simple      -- Pushes the current with the same branch with the same name as remote
+matching    -- Pushes all branches with the same name on both ends.
+
+If the files that we are trying to add only exist on a local repo, we have to git add them first.
+
+git add -A or -all
+This is followed by a git commit. 
+
+NOTE:   When using vim (default editor when using shell) Insert text and press escape to bring you back to the main page. From there type :wq for a write quit.
+    This will commit your changes to the repository.
