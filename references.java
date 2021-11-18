@@ -130,7 +130,7 @@ class SubClass extends ParentClass{
 
 
 
-// -------------------      Android Specific    ----------------
+// -------------------      Android Specific    -------------------
 // For a method like onDestroy whose parent is AppCompatActivity
 //      we can see examples like this
 
@@ -144,6 +144,23 @@ public class MainActivity extends AppCompatActivity{
     }
 }
 
+
+// -------------------      Creating a console proces from Java    -------------------
+// For any of those pesky things you can't do just using java
+// Very useful for getting around permissions. Never give the user this control.
+
+//      Part of the java.lang import package
+try {   // Console processes require being inside a try catch.
+    Process consoleProcessName = Runtime.getRuntime().exec("sh");       // This creates the console process and inits it with a shell execute.
+    consoleProcessName.getOutputStream().write("Your command here".getBytes());         // Sets the command ready for executing.
+    consoleProcessName.getOutputStream().write("\n".getBytes());        // This will be your 'enter' key for executing the command.
+
+    // Cleanup and exiting the console.
+    consoleProcessName.getOutputStream().write("exit\n".getBytes());
+    consoleProcessName.getOutputStream().flush();
+} catch (Exception e) {
+
+}
 
 
 

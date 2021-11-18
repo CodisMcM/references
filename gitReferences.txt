@@ -35,3 +35,7 @@ This is followed by a git commit.
 
 NOTE:   When using vim (default editor when using shell) Insert text and press escape to bring you back to the main page. From there type :wq for a write quit.
     This will commit your changes to the repository.
+
+This command pushes all file updates to be ready to commit.
+git push origin <main>          Sometimes this main is master. Depends on which branch you are trying to commit to.
+I keep getting strange errors using this that have to do with credentials not being right but it works nontheless.

@@ -11,4 +11,18 @@ if test -d /file/location/to/test; then echo "exists"; fi
             ./adb shell
             ## You now have access to the command line inside a device running off your android studio testing platform. 
             
+## Changing Directories
+cd <Directory Name Here>/<Next Subfolder Here>      ## To jump into a folder
+cd ../      ## To jump back a step
+cd          ## To jump back to root
+
+ls      # See all files in current directory
+
+## Compiling with g++
+
+g++ -Wall <cpp files> <more cpp files> -o <exe file name>
+
+##  Creating a makefile will help with not having to type in the same file names every time
+
+
 
